@@ -20,3 +20,28 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: rgb(48, 175, 230);
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border: 1px solid;
+}
+
+.header {
+    grid-column: 2/3;
+
+    border: 1px solid;
+}
+
+.content {
+    background-color: rgb(189, 191, 194);
+    border: 1px solid;
+    grid-column: 2/3;
+}
+
