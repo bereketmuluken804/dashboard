@@ -5,8 +5,9 @@
   margin: 0;
 }
 
-body {
-    max-width: 100%;
+html, body{
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 input, button, textarea, select {
@@ -22,8 +23,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .sidebar {
@@ -31,11 +34,15 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 1/2;
     grid-row: 1/3;
     border: 1px solid;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    font-weight: 600;
 }
 
 .header {
     grid-column: 2/3;
-
     border: 1px solid;
 }
 
@@ -43,5 +50,13 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgb(189, 191, 194);
     border: 1px solid;
     grid-column: 2/3;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+li::marker {
+    content: "";
 }
 
