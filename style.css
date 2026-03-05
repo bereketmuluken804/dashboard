@@ -131,3 +131,48 @@ button:hover {
 img {
     border-radius: 50%;
 }
+
+.content {
+    display: grid;
+    grid-template: 1fr 1fr/  4fr 1fr;
+    padding: 2vh 4vh;
+}
+
+.projects {
+   grid-row: span 2;
+}
+
+.ann-box {
+    font-size:small;
+    background-color: white;
+    padding: 2vh;
+    display: grid;
+    gap: 1vh;
+    height: 70%;
+    min-height: min-content;
+    border-radius: 15px;
+    margin-top: 2vh;
+
+    
+}
+
+.trending-box {
+    font-size:small;
+    background-color: white;
+    padding: 2vh;
+    margin-top: 2vh;
+    display: grid;
+    gap: 1vh;
+    border-radius: 15px;
+
+}
+
+.profile {
+    display: flex;
+    gap: 1vh;
+    line-height:1.25;
+}
+
+.content p {
+    color: #6c6b6b;
+}
