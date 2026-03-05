@@ -141,6 +141,19 @@ img {
 .projects {
    grid-row: span 2;
 }
+.project-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2vh;
+    padding: 2vh 2vh 2vh 0;
+
+}
+.project-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2vh;
+    border-left: 10px solid rgb(255, 247, 10);
+}
 
 .ann-box {
     font-size:small;
@@ -152,8 +165,6 @@ img {
     min-height: min-content;
     border-radius: 15px;
     margin-top: 2vh;
-
-    
 }
 
 .trending-box {
